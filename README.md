@@ -1,14 +1,14 @@
-# m-jvm
-简单的实现jvm
-编码：UTF-8
-jdk1.8
-**class文件解析格式与jdk版本有关**
+# m-jvm <br>
+简单的实现jvm <br>
+编码：UTF-8 <br>
+jdk1.8 <br>
+**class文件解析格式与jdk版本有关** <br>
 
-运行MiniJVMTest.java 需要修改PATH到存放class文件的项目目录
-ClassFileloaderTest中path1，path2亦如是
+运行MiniJVMTest.java 需要修改PATH到存放class文件的项目目录 <br>
+ClassFileloaderTest中path1，path2亦如是 <br>
 
 
-MiniJVMTest.java运行结果：
+MiniJVMTest.java运行结果： <br>
 
 0:bb new  jvm/test/EmployeeV1 <br>
 3:59 dup <br>
