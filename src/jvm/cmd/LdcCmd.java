@@ -5,6 +5,7 @@ import jvm.constant.ConstantInfo;
 import jvm.constant.ConstantPool;
 import jvm.constant.StringInfo;
 import jvm.engine.ExecutionResult;
+import jvm.engine.Heap;
 import jvm.engine.JavaObject;
 import jvm.engine.StackFrame;
 

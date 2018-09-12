@@ -16,7 +16,7 @@ public class MethodArea {
     public static final MethodArea instance = new MethodArea();
 
     /**
-     * 注意：我们做了极大的简化， ClassLoader 只有一个， 实际JVM中的ClassLoader,是一个双亲委托的模型
+     * 注意：极大的简化， ClassLoader 只有一个， 实际JVM中的ClassLoader,是一个双亲委托的模型
      */
 
     private ClassFileLoader clzLoader = null;

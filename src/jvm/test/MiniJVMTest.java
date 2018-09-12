@@ -20,7 +20,7 @@ import org.junit.Test;
 	public void testMain() throws Exception{
 		String[] classPaths = {PATH};
 		MiniJVM jvm = new MiniJVM();
-		//javap -verbose 功能
+
 		jvm.run(classPaths, "jvm.test.EmployeeV1");
 
 	}

@@ -37,7 +37,7 @@ public class InvokeVirtualCmd extends TwoOperandCmd {
         String className = methodRefInfo.getClassName();
         String methodName = methodRefInfo.getMethodName();
 
-        // 我们没有实现System.out.println方法，  所以也不用建立新的栈帧， 直接调用Java的方法， 打印出来即可。
+        // 没有实现System.out.println方法，  所以也不用建立新的栈帧， 直接调用Java的方法， 打印出来即可。
         if(isSystemOutPrintlnMethod(className,methodName)){
             JavaObject jo = (JavaObject)frame.getOprandStack().pop();
             String value = jo.toString();

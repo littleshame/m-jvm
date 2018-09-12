@@ -16,41 +16,58 @@ public class JavaObject {
     int type;
     private String className;
 
-    private Map<String, JavaObject> fieldValues = new HashMap<String,JavaObject>();
-
     private String stringValue;
 
     private int intValue;
 
     private float floatValue;
 
-    public void setFieldValue(String fieldName, JavaObject fieldValue){
-        fieldValues.put(fieldName, fieldValue);
-    }
-    public JavaObject(int type){
+    private Map<String, JavaObject> fieldValues = new HashMap<String,JavaObject>();
+
+    public JavaObject(int type) {
         this.type = type;
     }
-    public void setClassName(String className){
+
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
         this.className = className;
     }
-    public void setStringValue(String value){
-        stringValue = value;
+
+    public String getStringValue() {
+        return stringValue;
     }
-    public String getStringValue(){
-        return this.stringValue;
+
+    public void setStringValue(String stringValue) {
+        this.stringValue = stringValue;
     }
-    public void setIntValue(int value) {
-        this.intValue = value;
+
+    public int getIntValue() {
+        return intValue;
     }
-    public int getIntValue(){
-        return this.intValue;
+
+    public void setIntValue(int intValue) {
+        this.intValue = intValue;
     }
+
+    public float getFloatValue() {
+        return floatValue;
+    }
+
+    public void setFloatValue(float floatValue) {
+        this.floatValue = floatValue;
+    }
+
+    public void setFieldValue(String fieldName, JavaObject fieldValue) {
+        fieldValues.put(fieldName, fieldValue);
+    }
+
     public int getType(){
         return type;
     }
-    public JavaObject getFieldValue(String fieldName){
-        return this.fieldValues.get(fieldName);
-    }
+
     public String toString(){
         switch(this.getType()){
             case INT:
@@ -65,11 +82,4 @@ public class JavaObject {
                 return null;
         }
     }
-    public String getClassName(){
-        return this.className;
-    }
-    public void setFloatValue(float value) {
-        this.floatValue = value;
-    }
-
 }

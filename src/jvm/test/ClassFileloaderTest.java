@@ -175,8 +175,8 @@ public class ClassFileloaderTest {
     }
 
     /**
-     * l
-     * 下面是第三次JVM课应实现的测试用例
+     *
+     *
      */
     @Test
     public void testReadFields() {

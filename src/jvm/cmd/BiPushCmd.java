@@ -2,6 +2,7 @@ package jvm.cmd;
 
 import jvm.clz.ClassFile;
 import jvm.engine.ExecutionResult;
+import jvm.engine.Heap;
 import jvm.engine.JavaObject;
 import jvm.engine.StackFrame;
 
