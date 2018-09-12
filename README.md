@@ -10,11 +10,9 @@ ClassFileloaderTest中path1，path2亦如是
 
 MiniJVMTest.java运行结果：
 
-0:bb new  jvm/test/EmployeeV1
-
-3:59 dup
-
-4:12 ldc Andy
+0:bb new  jvm/test/EmployeeV1 <br>
+3:59 dup <br>
+4:12 ldc Andy <br>
 6:10 bipush 29
 8:b7 invokespecial  jvm/test/EmployeeV1 : <init> : (Ljava/lang/String;I)V
 0:2a aload_0
