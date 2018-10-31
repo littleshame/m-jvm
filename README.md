@@ -1,6 +1,6 @@
 
 # m-jvm <br>
-简单的实现jvm <br> --来自刘欣老师布置的作业
+简单的实现jvm <br>
 
 编码：UTF-8 <br>
 jdk1.8 <br>
